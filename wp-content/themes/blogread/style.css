@@ -1,0 +1,240 @@
+/*
+Theme Name: Blogread
+Theme URI: https://themeansar.com/free-themes/blogread-free-wordpress-theme/
+Author: Themeansar
+Author URI: https://themeansar.com
+Description: Blogread is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. Blogread is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. Blogread is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://demos.themeansar.com/blogdata/blogread/ and documentation at https://docs.themeansar.com/docs/blogdata/
+Version: 0.3
+Requires PHP: 7.0
+Requires at least: 5.4
+Tested up to: 6.6
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: blogdata
+Text Domain: blogread
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+Blogread WordPress Theme is child theme of Blogus, Copyright 2023 Themeansar
+Blogread is distributed under the terms of the GNU General Public License v3
+
+Blogread is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+*:focus {
+    outline: 1px dotted #8e54e9;
+}
+.navbar-toggler.x:focus,
+button:focus {
+    border: 1px solid;
+    outline: 2px dotted #000;
+}
+button:focus:not(:focus-visible){
+    outline: 2px dotted #000;
+}
+.bs-menu-full .navbar-brand img:focus {
+    outline: 1px dotted #8e54e9;
+}
+label.switch.d-none.d-lg-inline-block {
+    display: none !important;
+}
+p a {
+    text-decoration: underline;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'jost', sans-serif;
+}
+.site-title { 
+    font-family: 'jost', sans-serif;
+}
+.navbar-wp .navbar-nav > li> a { 
+    font-family: 'jost', sans-serif;
+}
+body { 
+    font-family: 'jost', sans-serif;
+}
+footer .site-branding-text .site-title-footer a{
+    font-family: 'jost', sans-serif;
+}
+.bs-menu-full{
+    padding: 10px 0;
+}
+.multi-post-widget .inner_columns.four .bs-blog-post.bsm {
+    height: 600px;
+}
+.mainfeatured.four .gx-1 > * {
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+.mainfeatured.four{
+    padding-top: 0;
+}
+.mainfeatured .multi-post-widget .inner_columns.four {
+    grid-gap: 0;
+}
+.mainfeatured.four .homemain {
+    border-radius: 0;
+}
+.mainfeatured.four .bs-slide.bs-blog-post.three{
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.mainfeatured.four .bs-slide.bs-blog-post.three.lg .inner {
+    justify-content: flex-end;
+}
+header .site-branding-text{
+    text-align: center;
+}
+.bs-menu-full .navbar-brand img{
+    margin: auto;
+}
+.list-blog .bs-blog-thumb{
+    min-height: 300px;
+}
+.list-blog.bs-blog-post{
+    align-items: center;
+    padding: 20px;
+    grid-template-columns: auto;
+}
+.list-blog.bs-blog-post:has(.bs-blog-thumb){
+    grid-template-columns: repeat(2, 1fr);
+}
+.bs-blog-post{
+    padding: 20px;
+    border-radius: var(--bxbra);  
+    box-shadow: var(--bxsh); 
+}
+.bs-blog-post:hover{
+    box-shadow: var(----bxshover); 
+}
+.bs-blog-post .title a {
+    background-position: left 95%;
+}
+.bs-blog-post .title a:hover {
+    background-position: left 95%;
+}
+.bs-sidebar .bs-widget{
+    padding: 20px;
+    border-radius: var(--bxbra);  
+    box-shadow: var(--bxsh); 
+}
+.bs-sidebar .bs-widget:hover{
+    box-shadow: var(----bxshover); 
+}
+.bs-sidebar .bs-widget .wd-back{
+    padding: 0;
+    border-radius: 0;  
+    box-shadow: none; 
+}
+.bs-sidebar .bs-widget .wd-back:hover{
+    box-shadow: none; 
+}
+.bs-sidebar .widget_block:last-child{
+    padding: 20px
+}
+.widget_block .wp-block-heading, .wp-block-search__label{
+    position: relative;
+    margin-bottom: 20px;
+}
+.bs-widget-title.one .title::before, .widget_block .wp-block-heading::before, .wp-block-search__label:before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 12.5%;
+    bottom: -8px;
+    z-index: 1;
+}
+.bs-widget-title.one .title::before{
+    width: 40%;
+}
+.wp-block-search__button-outside{
+    overflow: hidden;
+}
+.wp-block-search .wp-block-search__inside-wrapper{
+    margin-top: 30px;
+}
+.wp-block-search__label::before{
+    width: 60%;
+    transform: translate(0);
+    top: auto;
+}
+.widget_block .wp-block-heading::after, .wp-block-search__label::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    bottom: -7px;
+    left: 0;
+}
+.bs-widget-title.one{
+    border-bottom: 2px solid;
+}
+.bs-breadcrumb-section .overlay{
+    border-radius: var(--bxbra);
+}
+.navbar-wp nav{
+    justify-content: flex-start;
+}
+.bs-card-box, .wd-back, .bs-info-author-block{
+    padding: 20px;
+    border-radius: var(--bxbra);  
+    box-shadow: var(--bxsh); 
+}
+.bs-card-box:hover, .wd-back:hover, .bs-info-author-block:hover{
+    box-shadow: var(----bxshover); 
+}
+.mainfeatured.four .bs-slide.bs-blog-post.three.lg .inner .title {
+    line-height: 1.4;
+    width: 75%;
+}
+#content .d-grid {
+    row-gap: 48px;
+}
+.missed .bs-widget-title{
+    padding: 0;
+    padding-bottom: 5px;
+}
+.multi-post-widget .bs-blog-post.three.bsm .title {
+    font-size: 24px;
+    line-height: 1.4;
+}
+.blogdata-pagination{
+    margin-top: 0 !important;
+    margin-bottom: 3rem;
+}
+textarea:focus{
+    outline: 0;
+}
+@media (max-width: 991.98px) {
+    .missed .inner{
+        gap: 0;
+    }
+    .navbar-wp {
+        justify-content: start;
+    }
+}
+@media (max-width: 767.98px) {
+    .list-blog.bs-blog-post:has(.bs-blog-thumb){
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+    .list-blog.bs-blog-post .bs-blog-thumb{
+        margin-bottom: 0;
+        height: auto;
+    }
+    .mainfeatured.four .bs-slide.bs-blog-post.three.lg {
+        height: 400px;
+    }
+    .mainfeatured.four .bs-slide.bs-blog-post.three.lg .inner .title{
+        font-size: 30px;
+    }
+}
+@media (max-width: 575.98px) {
+    .mainfeatured .multi-post-widget .inner_columns.four{
+        grid-template-columns: auto;
+        grid-gap: 1.5rem;
+    }
+    .multi-post-widget .inner_columns.four .bs-blog-post.bsm {
+        height: 300px;
+    }
+}
